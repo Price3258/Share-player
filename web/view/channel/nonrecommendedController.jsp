@@ -1,0 +1,27 @@
+<%@ page import="dao.ChDao" %>
+<%@ page import="dao.RecomDao" %><%--
+  Created by IntelliJ IDEA.
+  User: wontae
+  Date: 2016. 10. 11.
+  Time: PM 2:50
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%
+    ChDao chHandler = ChDao.getInstance();
+    RecomDao rcHandler = RecomDao.getInstance();
+
+    int ch_id = Integer.parseInt(request.getParameter("ch_id"));
+    int user_id = chHandler.getUser_id(ch_id);
+
+    try {
+        rcHandler.insertNonReco(ch_id,user_id);
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+
+%>
+<script language=javascript>
+    self.window.alert("비추천 완료.");
+    location.href="mainCh.jsp?ch_id=<%=ch_id%>";
+</script>

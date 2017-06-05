@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+    <Resource name="jdbc/mysql"
+              auth="Container"
+              type="javax.sql.DataSource"
+              username="root"
+              password="gkxm2525"
+              driverClassName="com.mysql.jdbc.Driver"
+              url="jdbc:mysql://ec2-52-78-83-75.ap-northeast-2.compute.amazonaws.com:3306/sp2?characterEncoding=UTF-8"
+              maxActive="20"
+              maxIdle="10" />
+</Context>
+
+        <!--url="jdbc:mysql://208.69.31.75:3306/sp?useUnicode=true&amp;characterEncoding=UTF-8"-->

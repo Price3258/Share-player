@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="shareplayer">
+    <output-path>$PROJECT_DIR$/out/artifacts/shareplayer</output-path>
+    <root id="archive" name="shareplayer.war">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="SP2" />
+          <element id="library" level="application" name="jquery" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="SP2/web/Web" />
+    </root>
+  </artifact>
+</component>

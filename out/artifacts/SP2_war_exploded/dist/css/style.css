@@ -1,0 +1,30 @@
+body, html {
+	height: 100%;
+	width: 100%;
+}
+
+.index_bg-signup_bg {
+	min-height: auto;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	background-position: center;
+	background-image: url("../img/ininin.png");
+	height:100%;
+	display:table;
+	width:100%;
+	color:#ffffff;
+}
+
+.vcenter {
+	display:table-cell;
+	vertical-align:middle;
+}
+
+.login-card {
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
